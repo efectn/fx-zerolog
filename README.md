@@ -18,9 +18,9 @@ go get -u github.com/efectn/fx-zerolog@latest
 ### Example
 ```go
 import (
-	"github.com/rs/zerolog"
+    "github.com/rs/zerolog"
     "go.uber.org/fx"
-	"github.com/efectn/fx-zerolog"
+    "github.com/efectn/fx-zerolog"
 )
 
 // ...
