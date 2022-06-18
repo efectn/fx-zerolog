@@ -5,8 +5,6 @@
 Zerolog adapter for uber-go/fx/fxevent. 
 
 ### Supported Go Versions
-- 1.16
-- 1.17
 - 1.18
 
 ### Install
