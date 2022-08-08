@@ -19,6 +19,13 @@ func Init() func(logger zerolog.Logger) fxevent.Logger {
 	}
 }
 
+// InitPtr returns a pointer to the logger instance for Zerolog.
+func InitPtr() func(logger *zerolog.Logger) fxevent.Logger {
+	return func(logger *zerolog.Logger) fxevent.Logger {
+		return &ZeroLogger{Logger: *logger}
+	}
+}
+
 // LogEvent logs the given event to the provided Zerolog.
 func (l *ZeroLogger) LogEvent(event fxevent.Event) {
 	switch e := event.(type) {
