@@ -24,8 +24,6 @@ import (
 // ...
 
 func main() {
-    logger := zerolog.New(...)
-
     fx.New(
     	fx.Provide(
     		NewLogger,
@@ -35,7 +33,7 @@ func main() {
     	fx.Invoke(Listen),
 
     	WithLogger(
-           fxzerolog.Init(logger),
+           fxzerolog.Init(),
        ),
     )
 }
