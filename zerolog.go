@@ -13,7 +13,7 @@ type ZeroLogger struct {
 }
 
 // Init returns the logger instance for Zerolog.
-func Init(logger zerolog.Logger) func(logger zerolog.Logger) fxevent.Logger {
+func Init() func(logger zerolog.Logger) fxevent.Logger {
 	return func(logger zerolog.Logger) fxevent.Logger {
 		return &ZeroLogger{Logger: logger}
 	}
