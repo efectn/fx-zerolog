@@ -3,7 +3,7 @@ module github.com/efectn/fx-zerolog
 go 1.18
 
 require (
-	github.com/rs/zerolog v1.27.0
+	github.com/rs/zerolog v1.28.0
 	go.uber.org/fx v1.17.1
 )
 
