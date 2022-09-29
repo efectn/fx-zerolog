@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/rs/zerolog v1.28.0
-	go.uber.org/fx v1.17.1
+	go.uber.org/fx v1.18.2
 )
 
 require (
